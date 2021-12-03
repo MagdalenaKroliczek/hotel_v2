@@ -1,96 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/normalize.css">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-16x16.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <title>Hotel Parismo *****</title>
-    </head>
-  
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-16x16.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Hotel Parismo *****</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="container_debut">
+        <li id="Debut"><a href="#">Hotel Parismo</a></li>
+      </div>
+      <ul class="menu">
+        <li class="lien"><a href="index.html" title="Accueil">Accueil</a></li>
+        <li class="lien"><a href="chambres.html" title="Chambres et suites">Chambres et suites</a></li>
+        <li class="lien" id="reserver"><a href="reservation.html" title="Réserver">Réserver</a></li>
+        <li class="lien"><a href="contact.html" title="Nous contacter">Nous contacter</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <body>
-    <header>
-      <nav>
-        <div id="container_debut">
-          <li id="Debut"><a href="#">Hotel Parismo</a></li>
-        </div>
-        <ul class="menu">
-          <li class="lien"><a href="index.html" title="Accueil">Accueil</a></li>
-          <li class="lien"><a href="chambres.html" title="Chambres et suites">Chambres et suites</a></li>
-          <li class="lien" id="reserver"><a href="reservation.html" title="Réserver">Réserver</a></li>
-          <li class="lien"><a href="contact.html" title="Nous contacter">Nous contacter</a></li>
-        </ul>
-      </nav>
-    </header>
-    <body>
-      <form action="responsive.html" method="get">
-        <fieldset>
-            <h1>Réservation</h1>
-          <h2>Mes Données Personnelles</h2>
-      <div class="container">
-        <div class="left">
-         
-             <input type="text" name="nom" id="nom" placeholder="Entrez votre Nom *" required>
+    <h1>Réservation</h1>
+    <form action="response.html" method="get">
+      <fieldset>
+
+        <h2>Mes Données Personnelles</h2>
+        <div class="container">
+          <div class="left">
+
+            <input type="text" name="nom" id="nom" placeholder="Entrez votre Nom *" required>
             <input type="text" name="prenom" id="prenom" placeholder="Entrez votre Prénom *" required>
-            <input type="email" name="email" id="email" placeholder="Entrez votre Email *" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"> 
+            <input type="email" name="email" id="email" placeholder="Entrez votre Email *" required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
             <input type="text" name="tel" id="tel" placeholder="+33 6 46 53 65 37 *" required>
             <input type="text" name="adresse" id="adresse" placeholder="Entrez votre Adresse">
-       
-        </div>
-        <div class="right">
-          <input type="text" name="ville" id="ville" placeholder="Entrez votre Ville">
-         
-          <input type="date" name="dateArrv" id="dateArrv" required>
-          <input type="date" name="datedprt" id="datedprt" required>
-          <p>Mode de paiement</p>
-          <select name="contrat" id="contract">
-                <option value="" selected>--Choisissez Un Mode de Paiement--</option>
-                <option value="masterCard">Master Card</option>
-                <option value="diners"> Diners Club</option>
-                <option value="amrcnExprs">American Express</option>
-                <option value="visa">Visa</option>   
-                <option value="jcb">JCB</option>     
+
+          </div>
+          <div class="right">
+            <input type="text" name="ville" id="ville" placeholder="Entrez votre Ville">
+
+            <input type="date" name="dateArrv" id="dateArrv" required>
+            <input type="date" name="datedprt" id="datedprt" required>
+            <p>Mode de paiement</p>
+            <select name="contrat" id="contract">
+              <option value="" selected>--Choisissez Un Mode de Paiement--</option>
+              <option value="masterCard">Master Card</option>
+              <option value="diners"> Diners Club</option>
+              <option value="amrcnExprs">American Express</option>
+              <option value="visa">Visa</option>
+              <option value="jcb">JCB</option>
             </select>
-      
+
+          </div>
         </div>
+        <div class="buttons1">
+          <input type="submit" value="Reserver" name="reserve" id="reserve">
+          <input type="reset" value="Annuler" name="reset" id="reset">
+        </div>
+      </fieldset>
+    </form>
+    <footer class="footer footer1">
+      <h2>Hotel Parismo</h2>
+      <div class="footer_social">
+        <div><span id="suivez">SUIVEZ LE PARISMO</span></div>
+        <div>
+
+          <span><i class="fab fa-facebook-square"></i></span>
+          <span><i class="fab fa-instagram-square"></i></span>
+          <span><i class="fab fa-twitter-square"></i></span>
+
+        </div>
+        <div><span id="newsletter">INSCRIVEZ VOUS A LA NEWSLETTER</span></div>
+        <div>
+          <form action="#" method="POST">
+            <input type="email" placeholder="Saisissez votre email" id="email">
+            <input type="submit" value="OK" id="buttonnewsletter">
+          </form>
+
+
+        </div>
+
       </div>
-          <div class="buttons1">
-           <input type="submit" value="Reserver" name="reserve" id="reserve">
-            <input type="reset" value="Annuler" name="reset" id="reset"> 
-            </div>
-          </fieldset>
-        </form>
-      <footer class="footer">
-            <h2>Hotel Parismo</h2>
-            <div class="footer_social">
-                <div><span id="suivez">SUIVEZ LE PARISMO</span></div>
-                <div>
-                    
-                    <span><i class="fab fa-facebook-square"></i></span>
-                    <span><i class="fab fa-instagram-square"></i></span>
-                    <span><i class="fab fa-twitter-square"></i></span>
-    
-                </div>
-                <div><span id="newsletter">INSCRIVEZ VOUS A LA NEWSLETTER</span></div>
-                <div>
-                    <form action="#" method="POST">
-                        <input type="email" placeholder="Saisissez votre email" id ="email">
-                        <input type="submit" value="OK" id="buttonnewsletter">
-                    </form>
-                    
-                    
-                </div>
-                
-            </div>
-            <div id="Copyright"> &copy; Hotel Parismo,2021 - Politique de confidentialité - Mentions légales 15 place Vondome 75001 Paris tél : 01-47-00-05-02 Email : parismo@contact.fr </div>
-        </footer>
-      
-    </body>
-    </html>
-    
+      <div id="Copyright"> &copy; Hotel Parismo,2021 - Politique de confidentialité - Mentions légales 15 place Vondome
+        75001 Paris tél : 01-47-00-05-02 Email : parismo@contact.fr </div>
+    </footer>
+
+  </body>
+
+</html>

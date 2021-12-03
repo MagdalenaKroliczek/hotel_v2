@@ -1,0 +1,312 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Dancing+Script&display=swap');
+
+body{
+    font-family:'Advent Pro', sans-serif;
+    margin:0;
+    padding: 0;
+    background-color: #EFEFEF;
+    
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    z-index: 10000;
+    top:0;
+    background-color:#27374d;
+    opacity: 0.9;
+    width: 100%;
+    font-size: 1.2em;
+    list-style-type:none;
+    line-height: 20px;
+    
+   
+    
+}
+nav ul{
+    display: flex; 
+    justify-content: center;
+     column-gap: 30px;
+    align-items: center;
+    list-style-type:none;
+    
+    
+
+}
+
+
+nav a{
+    text-decoration: none;
+    color:white;
+   
+}
+/* .lien a:hover{
+    background-color: #e0bb6d;
+    color: black;
+    font-size: larger;
+    border:2px groove white;
+    font-weight: bold;
+
+} */
+
+#Debut  a , footer h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 2em;
+    color: #e0bb6d;   
+    
+}
+
+
+
+
+
+
+/* #imagepricipale{
+    margin-top: 58px;
+    background: url(hotel.jpg) no-repeat fixed ;
+    background-size: cover;
+    height: 799px;
+} */
+h1{
+    font-family: 'Dancing Script', cursive;
+    margin-top :100px;
+    margin-bottom: 10px;
+    text-align: center; 
+    color: #e0bb6d;
+    font-size: 4em;   
+}
+#description{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 1.2em;
+}
+#chambres{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+ h2{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 2em;
+
+}
+#lienreserver{
+    display: inline-block;
+    color: white;
+    border: 2px solid black;
+    padding: 5px;
+    background-color:#27374d ;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    
+}
+#lienreserver:hover{
+    background-color: #e0bb6d;
+    color: black;
+    font-size: 2.2em;
+    border:2px groove ;
+    font-weight: bold;
+
+}
+#reserverchambre{
+    position: relative;
+}
+#chetsuite{
+    position: absolute;
+    left:-100px;
+    top: 150px;
+    color:white;
+    background-color:#27374d ;
+    width: 210px;
+    font-size: 2em;
+    text-align: center;
+
+}
+#bar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+#barlanterne{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:20px;
+    
+    
+    
+    margin-bottom: 20px;
+
+}
+
+
+#lecomptoire{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+#lecomptoirelanterne{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:20px;
+    
+    
+    margin-bottom: 20px;
+
+}
+
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#27374d;
+    opacity: 0.9;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 20px;
+    row-gap: 20px;
+    position: relative;
+    bottom: 0px;
+
+}
+
+    
+
+
+
+.footer_social{
+    color:silver;
+    font-size: 1.2em;
+    display: flex; 
+    column-gap: 20px;  
+    
+}
+#suivez ,#newsletter  {
+    color: #e0bb6d;
+    
+    
+
+}
+#email{
+ font-size: 1em;     
+    
+}
+
+
+#buttonnewsletter{
+    color: white;
+    background-color: #e0bb6d;
+    font-size: 1.2em;
+}
+
+#Copyright{
+    color: white;
+    
+}
+
+#formulaire-contact , #formulaire-reserver{
+    background-color:#27374d;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    width: 50%;
+    
+    
+}
+
+
+#form-contact input,#form-contact textarea , #form-contact select {
+    border:none;
+    padding:5px 5px;
+    margin: 1px 0px;
+     font-size: 1.2em;
+    border-radius: 8px;
+    width:50%;
+
+}
+
+#form-contact h2 ,#formulaire-reserver label{
+    color: white;
+
+}
+
+
+#car{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+
+    
+
+}
+#caroussel{
+    width:1440px;
+    overflow: hidden;
+    
+
+}
+.images{
+    display: flex;
+    animation-duration: 30s;
+    animation-name: mes-images;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mes-images {
+    0% {
+        transform: translateX(0);
+    }
+    14.29% {
+        transform: translateX(-1440px);
+    }
+    28.58% {
+        transform: translateX(-2880px);
+    }
+    42.87% {
+        transform: translateX(-4320px);
+    }
+    57.16% {
+        transform: translateX(-5760px);
+    }
+    71.45% {
+        transform: translateX(-7200px);
+
+    }
+    85.74% {
+        transform: translateX(-8640px);
+
+    }
+    100% {
+        transform: translateX(0px);
+
+    }
+
+    
+    
+    
+    
+    
+}
+
+
+
+
+
